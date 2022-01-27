@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layoutAddTask"
+    android:tag="addTaskFragment"
+    tools:context=".AddTaskFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:id="@+id/recyclerViewAdd">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <FrameLayout
+        android:id="@+id/bottomAddContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnNewActivities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="New Activities"></Button>
+
+    </FrameLayout>
+
+</LinearLayout>
